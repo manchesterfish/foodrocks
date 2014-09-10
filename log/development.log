@@ -13107,3 +13107,122 @@ ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=admin):
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.6ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.9ms)
+
+
+Started GET "/dishes/admin" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+Processing by DishesController#admin as HTML
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/admin.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 74ms (Views: 72.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/dishes.css?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/dishes.js?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 22:49:20 +0800
+
+
+Started GET "/dishes/" for 127.0.0.1 at 2014-09-10 23:05:01 +0800
+Processing by DishesController#index as HTML
+  [1m[35mDish Load (0.2ms)[0m  SELECT "dishes".* FROM "dishes"
+  Rendered dishes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/dishes.css?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/dishes.js?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/dish_images/%E5%8F%A3%E6%B0%B4%E9%B8%A1.jpg" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/dish_images/%E9%BA%BB%E5%A9%86%E8%B1%86%E8%85%90.jpg" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/dish_images/%E6%B0%B4%E7%85%AE%E9%B1%BC.jpg" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/dish_images/%E9%85%B8%E8%BE%A3%E5%9C%9F%E8%B1%86%E4%B8%9D.jpg" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/assets/dish_images/%E5%AE%AB%E4%BF%9D%E9%B8%A1%E4%B8%81.jpg" for 127.0.0.1 at 2014-09-10 23:05:02 +0800
+
+
+Started GET "/dishes/1" for 127.0.0.1 at 2014-09-10 23:09:01 +0800
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDish Load (0.1ms)[0m  [1mSELECT  "dishes".* FROM "dishes"  WHERE "dishes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered dishes/_new_order.html.erb (1.4ms)
+  Rendered dishes/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/dishes/1" for 127.0.0.1 at 2014-09-10 23:09:16 +0800
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDish Load (0.1ms)[0m  SELECT  "dishes".* FROM "dishes"  WHERE "dishes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered dishes/_new_order.html.erb (1.2ms)
+  Rendered dishes/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.1ms)
