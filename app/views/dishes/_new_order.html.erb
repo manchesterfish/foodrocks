@@ -1,4 +1,4 @@
-<%= form_for(order) do |f| %>
+<%= form_for(order, html:{class: "form-horizontal "}) do |f|%>
   <% if order.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
@@ -10,18 +10,28 @@
     </div>
   <% end %>
 
+
   <div class="field">
     <%= f.hidden_field :dish_id %>
   </div>
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="field form-group ">
+    <%= f.label :name, :class=>'col-sm-5 control-label text-white'%>
+    <div class="col-sm-5">
+      <%= f.text_field :name, :class=>'form-control '%>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :phone_num %><br>
-    <%= f.number_field :phone_num %>
+  <div class="field form-group">
+    <%= f.label :phone_num, :class=>'col-sm-5 control-label text-white' %>
+    <div class="col-sm-5">
+      <%= f.number_field :phone_num, :class=>'form-control' %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit "Make Order"%>
+
+
+  <div class="actions col-sm-offset-2 col-sm-8">
+    <br>
+    <%= f.submit "Place Order", :class=>'btn btn-lg btn-danger btn-block'%>
+    
   </div>
+
 <% end %>

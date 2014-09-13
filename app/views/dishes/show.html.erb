@@ -1,20 +1,50 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-<%= image_tag(@dish.ImageURL, size: "200x180") %>
-</p>
 
+<div id="bg">
+  <%= image_tag(@dish.ImageURL, class: "img-blur") %>
+</div>
+
+
+<div class="container">
+ <div class="text-center">
+ <%= image_tag(@dish.ImageURL, size: "400x360", class: "img-rounded img-centered") %>
+ <br><br>
+ </div>
+
+
+ <form class="form-horizontal" role="form">
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label text-white">Dish name</label> 
+        <p class="col-sm-5 text-align-left large-font-size"><%= @dish.dish_name %></p> 
+    </div>
+
+    <div class="form-group">
+       <label class="col-sm-5 control-label text-white">Price</label> 
+        <p class="col-sm-5 text-align-left large-font-size"><%= @dish.price %></p> 
+    </div>
+ </form>
+</div>
+
+
+<!--
 <p>
-  <strong>Dish name:</strong>
+  <label class="col-sm-2 control-label">Dish name:</label>
   <%= @dish.dish_name %>
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong class="col-sm-2">Price:</strong>
   <%= @dish.price %>
 </p>
-
+-->
+<div class='container'>
 <%= render :partial=>"new_order", :locals=>{:order=>Order.new(:dish_id=>@dish.id)} %>
+</div>
 
 <%= link_to 'Edit', edit_dish_path(@dish) %> |
 <%= link_to 'Back', dishes_path %>
+
+
+
